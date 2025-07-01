@@ -1,6 +1,9 @@
 # 9. Palindrome Number (Easy)
 
-## Intuition
+## Trivial Solution
+* Cast the integer into the string and compare it with it's reverse
+
+## Intuition (Non-trivial)
 To solve this proble, we can take advantage of the modulo operator to build the reverse of the input. Since we are building the number in reverse, we would have to multiply the current reverse
 number by 10 before adding the remainder (since the digit we add from each iteration must be in the ones place). Then, compare the reverse with the original and return the boolean accordingly. 
 
