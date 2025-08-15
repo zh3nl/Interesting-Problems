@@ -11,7 +11,7 @@ def solution(numbers):
         right = mid
         result = []
         
-    while left >= 0 and right <= len(numbers):
+    while left >= 0 and right < len(numbers):
         result.append(numbers[left] * numbers[right])
         left -= 1
         right += 1
